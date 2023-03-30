@@ -1,0 +1,5 @@
+ERROR: fan tacho
+ERROR: i2c
+ERROR: dhcp
+
+Totally 3 ERRORS

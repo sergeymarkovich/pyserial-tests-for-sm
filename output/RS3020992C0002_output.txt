@@ -1,0 +1,90 @@
+version
+BMC firmware version: 1.6
+
+BMC # fru read serial
+Serial number: RS3020992C0002
+
+BMC # fru read mac
+MAC-address 1: 94:3F:BB:4B:7B:B8
+MAC-address 2: 94:3F:BB:4B:7C:A3
+MAC-address 3: 94:3F:BB:4B:7A:36
+
+BMC # fan set 100
+[32mL: [SHELL] Set fan power to 100 %[0m
+
+BMC # fan tacho
+[41;97mE: [SHELL] Fan is broken or not connected
+[0m
+
+BMC # fan set 15
+[32mL: [SHELL] Set fan power to 15 %[0m
+
+BMC # fan tacho
+[41;97mE: [SHELL] Fan is broken or not connected
+[0m
+
+BMC # thermo
+Available thermosensors:
+MCP9808 Switch ASIC	27
+MCP9808 Power      	27
+MCP9808 nano SSD   	27
+MCP9808 Power 2    	28
+
+BMC # i2c
+I2C bus scan:
+I2C ACK D4 OK
+I2C ACK 30 OK
+I2C ACK 32 OK
+I2C ACK 36 OK
+I2C ACK 3E OK
+[41;97mE: [I2C] Error R2002: ACK failed in master RX[ADDR][0m
+I2C ACK 58 ERROR
+I2C ACK A6 OK
+I2C ACK A2 OK
+
+BMC # exit
+
+## Application terminated, rc = 0x0
+version
+
+U-Boot 2014.10 / SDK 4.18 (Jan 19 2023 - 13:53:33)
+mipsel-unknown-linux-gnu-gcc (crosstool-NG 1.24.0-rc3) 8.3.0
+GNU ld (crosstool-NG 1.24.0-rc3) 2.32
+Istok U-Boot build: 1.2.1
+Istok BMC build: 1.6
+BAIKAL # usb start
+(Re)start USB...
+USB0:   Register 1000140 NbrPorts 1
+Starting the controller
+USB XHCI 1.00
+scanning bus 0 for devices... 2 USB Device(s) found
+       scanning usb for storage devices... 0 Storage Device(s) found
+       scanning usb for ethernet devices... 0 Ethernet Device(s) found
+BAIKAL # usb tree
+USB device tree:
+  1  Hub (5 Gb/s, 0mA)
+  |  u-boot XHCI Host Controller 
+  |
+  |+-2  Hub (480 Mb/s, 2mA)
+     
+BAIKAL # sata init
+AHCI 0001.0300 32 slots 2 ports 6 Gbps 0x3 impl SATA mode
+flags: ncq stag pm led clo only pmp pio slum part 
+SATA Device Info:
+S/N: 20201027AA1005411110
+Product model number: nanoSSD 3ME3
+Firmware version: S17411
+Capacity: 31277232 sectors
+BAIKAL # sata info
+
+SATA device 0: Model: nanoSSD 3ME3 Firm: S17411 Ser#: 20201027AA1005411110
+      Supports 48-bit addressing
+            Capacity: 15272.0 MB = 14.9 GB (31277232 x 512)
+BAIKAL # sf probe
+SF: Detected MX25U12832F with page size 256 Bytes, erase size 64 KiB, total 16 MiB
+BAIKAL # dhcp
+r PHY auto negotiation to complete......... TIMEOUT !
+dwmac.bf05e000: No link.
+dwmac.bf060000 Waiting for PHY auto negotiation to complete......... TIMEOUT !
+dwmac.bf060000: No link.
+BAIKAL # 

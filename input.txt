@@ -1,0 +1,18 @@
+version
+fru read serial
+fru read mac
+fan set 100
+fan tacho
+fan set 15
+fan tacho
+thermo
+i2c
+exit
+version
+usb start
+usb tree
+sata init
+sata info
+sf probe
+dhcp
+boot

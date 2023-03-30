@@ -1,0 +1,4 @@
+ERROR: fan tacho
+ERROR: i2c
+
+Totally 2 ERRORS
